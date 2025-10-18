@@ -193,7 +193,7 @@ def handle_not_open_chapter(notopen_action, point, tiku, RB, auto_skip_notopen=F
             logger.info(f"章节 {point['title']} 未开放，自动跳过")
             return 1, auto_skip_notopen  # 继续下一章节, 保持自动跳过状态
             
-    else:  # notopen_action == "continue"
+    else:   notopen_action == "continue"
         # 继续模式，直接跳过当前章节
         logger.info(f"章节 {point['title']} 未开放，根据配置跳过此章节")
         return 1  # 继续下一章节
