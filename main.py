@@ -77,7 +77,7 @@ def load_config_from_file(config_path):
             common_config["speed"] = float(common_config["speed"])
         # 处理notopen_action，设置默认值为retry
         if "notopen_action" not in common_config:
-            common_config["notopen_action"] = "retry"
+            common_config["notopen_action"] = "continue"
     
     # 检查并读取tiku节
     if config.has_section("tiku"):
